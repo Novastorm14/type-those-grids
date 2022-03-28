@@ -10,20 +10,34 @@ html {
 }
 
 .banner{
-  grid-area: banner;
+grid-column: 1 / -1;
+grid-row: : 1 / -1;
+  }
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  font-style: normal;
 }
 
 body {
   font-family: 'Merriweather', serif;
-  font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+.banner-text {
+  color: #fff;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 .grid-container {
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
 }
 
 .grid-container div {
