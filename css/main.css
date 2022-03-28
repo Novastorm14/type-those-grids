@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.banner{
+  grid-area: banner;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container div {
+  border: 2px solid
+  padding: 30px;
+}
