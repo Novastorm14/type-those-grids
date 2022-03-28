@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
+  font-family: 'Merriweather', serif;
 }
 
 *,
@@ -15,21 +16,19 @@ html {
   grid-template-rows: 1fr 3rem;
 }
 
-.banner-img{
-width: 100%
+.banner-img {
+  width: 100%;
 }
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
   font-size: 1.5rem;
   grid-gap: .75rem;
   grid-template-areas:
-  'banner'
-  'temple'
-  'colossus'
-  'garden'
-
+    "banner"
+    "temple"
+    "colossus"
+    "garden";
 }
 
 h1 {
