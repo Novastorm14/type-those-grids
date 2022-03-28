@@ -9,21 +9,37 @@ html {
   box-sizing: inherit;
 }
 
-.banner{
-grid-column: 1 / -1;
-grid-row: : 1 / -1;
-  }
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3rem;
 }
 
-h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 1.8rem;
-  font-style: normal;
+.banner-img{
+width: 100%
 }
 
 body {
+  margin: 0;
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
+  grid-gap: .75rem;
+  grid-template-areas:
+  'banner'
+  'temple'
+  'colossus'
+  'garden'
+
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
 .banner-text {
@@ -35,12 +51,11 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid-container div {
-  border: 2px solid
-  padding: 30px;
+  padding: 1rem;
 }
